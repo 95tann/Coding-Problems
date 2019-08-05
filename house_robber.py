@@ -4,7 +4,7 @@ Problem : House Robber
 Link    : https://leetcode.com/problems/house-robber/
 '''
 def rob(nums):
-	houses = len(num)
+    houses = len(num)
     if houses == 0:
         return 0
     
