@@ -1,8 +1,9 @@
 import check
 
 '''
-Topic   : Palindromes
-Problem : https://leetcode.com/problems/valid-palindrome/
+Topic   : String Manipulation
+Problem : Valid Palindromes
+Link    : https://leetcode.com/problems/valid-palindrome/
 '''
 def is_palindrome(string):
     if len(string) in [0,1]:
@@ -23,8 +24,9 @@ print(check.expect(False,is_palindrome("1224")))
 
 
 '''
-Topic   : Palindromes
-Problem : https://leetcode.com/problems/longest-palindromic-substring/
+Topic   : String Manipulation
+Problem : Longest Palindromes
+Link    : https://leetcode.com/problems/longest-palindromic-substring/
 '''
 def palindrome_helper(string,left,right):
     if left == right:

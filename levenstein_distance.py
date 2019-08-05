@@ -1,6 +1,7 @@
 ''' 
-Topic   : Edit/Levenstein Distance
-Problem : https://leetcode.com/problems/edit-distance/
+Topic   : Dynamic Programming
+Problem : Edit/Levenstein Distance
+Link    : https://leetcode.com/problems/edit-distance/
 '''
 import check
 

@@ -1,6 +1,7 @@
 ''' 
 Topic   : Dynamic Programming
-Problem : https://www.hackerrank.com/challenges/candies/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=dynamic-programming
+Problem : Candy Count
+Link    : https://www.hackerrank.com/challenges/candies/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=dynamic-programming
 '''
 def candies(n, arr):
     forward = [1] * n

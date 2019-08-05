@@ -1,6 +1,6 @@
 '''
-
-Topic  : Bubble Sort
+Topic  : Sorting
+Problem: Bubble Sort
 Runtime: O(n^2)
 Space  : O(1)
 

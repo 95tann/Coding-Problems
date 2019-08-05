@@ -1,6 +1,7 @@
 """
-Topic   : Hamming Distance
-Problem : https://leetcode.com/problems/hamming-distance/
+Topic   : Bitshift Operations
+Problem : Hamming Distance
+Link    : https://leetcode.com/problems/hamming-distance/
 """ 
 import check
 

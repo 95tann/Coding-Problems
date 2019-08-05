@@ -1,7 +1,8 @@
 
 ''' 
 Topic   : Binary Search Trees
-Problem : https://www.hackerrank.com/challenges/ctci-is-binary-search-tree/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=trees
+Problem : Valid BST
+Link    : https://www.hackerrank.com/challenges/ctci-is-binary-search-tree/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=trees
 ''' 
 
 def checkBST_helper(curr_node,min_val,max_val):
