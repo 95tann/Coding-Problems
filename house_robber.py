@@ -3,7 +3,7 @@ Topic   : Dynamic Programming
 Problem : House Robber
 Link    : https://leetcode.com/problems/house-robber/
 '''
-def rob(nums):
+def house_robber(nums):
     houses = len(num)
     if houses == 0:
         return 0
