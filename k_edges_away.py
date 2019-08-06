@@ -35,13 +35,13 @@ def k_nodes(start_node,k):
         rc = curr_node.right
         parent = parents[curr_node.value]
 
-		if(lc and !visited[lc.value]):
+		if(lc and visited[lc.value] == False):
 			Q.enqueue(lc)
 
-		if(rc and !visited[rc.value]):
+		if(rc and visited[rc.value] == False):
 			Q.enqueue(rc)
 
-		if(parent and !visited[parent.value]):
+		if(parent and visited[parent.value] == False):
 			Q.enqueue(parent)
 
 		k -= 1
