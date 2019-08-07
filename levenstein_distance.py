@@ -3,15 +3,13 @@ Topic   : Dynamic Programming
 Problem : Edit/Levenstein Distance
 Link    : https://leetcode.com/problems/edit-distance/
 '''
-import check
+from check import expect
 
 def levenstein_distance(str1, str2):
 	len_str1 = len(str1)
 	len_str2 = len(str2)
 
-	matrix = []
-	for i in range(len_str2+1):
-		matrix.append([0]*(len_str1+1))
+	matrix = [[0]*(len_str1+1) for i in range(len_str2+1)]
 
 	for row in range(len_str2 + 1):
 		for col in range(len_str1 + 1):
@@ -29,7 +27,9 @@ def levenstein_distance(str1, str2):
 	return matrix[len_str2][len_str1]
 
 # Tests
-print(check.expect(3,(levenstein_distance('abc',''))))
-print(check.expect(0,(levenstein_distance('hello','hello'))))
-print(check.expect(2,(levenstein_distance('ham','ame'))))
-print(check.expect(3,(levenstein_distance('horse','ros'))))
+print(expect(3,(levenstein_distance('abc',''))))
+print(expect(0,(levenstein_distance('hello','hello'))))
+print(expect(2,(levenstein_distance('ham','ame'))))
+print(expect(3,(levenstein_distance('horse','ros'))))
+print(expect(3,(levenstein_distance('honda','hyundai'))))
+print(expect(2,(levenstein_distance('geely','gily'))))
