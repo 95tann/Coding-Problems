@@ -28,6 +28,33 @@ Topic   : String Manipulation
 Problem : Longest Palindromes
 Link    : https://leetcode.com/problems/longest-palindromic-substring/
 '''
+
+# Solution 1
+########################
+def isPalindrome(substr):
+    i, j = 0, len(substr) -1
+
+    while(i<j):
+        if substr[i] != substr[j]:
+            return False
+        i += 1
+        j -= 1
+
+    return True
+    
+    
+def longestPalindrome(s):
+    if isPalindrome(s):
+        return s
+    else:
+        left_substr = longestPalindrome(s[0:-1])
+        right_substr = longestPalindrome(s[1:])
+
+        return left_substr if len(left_substr) >= len(right_substr) else right_substr
+
+
+# Solution 2
+########################
 def palindrome_helper(string,left,right):
     if left == right:
         return 1
