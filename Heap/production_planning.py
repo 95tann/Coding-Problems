@@ -9,7 +9,6 @@ Products can be produced in any order, however the company must have cash greate
 before choosing to produce product x. If a product is selected for production, it is produced at its average cost.
 Determine the minimum cash needed at beginning of production in order to produce all products
 
-
 Example
 -------
 worstcase = [6,5,7]
