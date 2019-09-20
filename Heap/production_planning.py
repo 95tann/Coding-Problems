@@ -1,7 +1,22 @@
 '''
 Topic   : Heaps
 Problem : Production Planning
-Link    : HackerRank
+
+Description
+-----------
+There are numerous products that a company needs to produce. Every product has a worstCase cost and an averageCase cost. 
+Products can be produced in any order, however the company must have cash greater than or equal to worstCase cost of product x
+before choosing to produce product x. If a product is selected for production, it is produced at its average cost.
+Determine the minimum cash needed at beginning of production in order to produce all products
+
+
+Example
+-------
+worstcase = [6,5,7]
+avgCase = [4,2,1]
+
+The optimal production order that minimizes beginning cash is product 2, then product 1, then product 0
+The minimum cash required is 9
 '''
 import heapq as hq
 
