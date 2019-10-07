@@ -31,9 +31,9 @@ def k_nodes(start_node,k):
 		curr_node = Q.dequeue()
 		visited[curr_node.value] = True
 
-        lc = curr_node.left
-        rc = curr_node.right
-        parent = parents[curr_node.value]
+        	lc = curr_node.left
+        	rc = curr_node.right
+        	parent = parents[curr_node.value]
 
 		if(lc and visited[lc.value] == False):
 			Q.enqueue(lc)
