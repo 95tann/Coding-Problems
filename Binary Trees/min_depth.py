@@ -16,7 +16,7 @@ def minDepth(root)
           return 0
 
       lc, rc = root.left, root.right
-      
+
       if lc and rc:
           return 1 + min(self.minDepth(lc), self.minDepth(rc))
       elif lc:
